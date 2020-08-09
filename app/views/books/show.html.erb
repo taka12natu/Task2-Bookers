@@ -1,2 +1,9 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<h2>Title:<%= @book.title %></h2>
+
+<h2>Body:<%= @book.body %></h2>
+<!-- 上にspan入れてタイトルとフォント変更 -->
+
+<span><%= link_to "Edit", edit_book_path(@book.id) %></span>
+<span><%= link_to "Back", "/books" %></span>
