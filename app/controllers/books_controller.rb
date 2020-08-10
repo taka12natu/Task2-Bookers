@@ -1,6 +1,9 @@
 class BooksController < ApplicationController
 
-   def index
+  def top
+  end
+
+  def index
    	@book = Book.new
    	@books = Book.all
   end
@@ -27,9 +30,6 @@ class BooksController < ApplicationController
   	@book = Book.find(params[:id])
   	@book.update(book_params)
   	redirect_to @book, notice: 'Book was successfully updated.'
-  end
-
-  def top
   end
 
   def destroy
