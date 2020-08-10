@@ -2,6 +2,15 @@
 <h1>Editing Book</h1>
 
 <%= form_for(@book, ) do |f| %>
+  <% if @book.errors.any? %>
+	<h2 class="error-title"><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+  <ul class="error-content">
+    <% @book.errors.full_messages.each do |message| %>
+	  <li class="error-message"><%= message %></li>
+	<% end %>
+	  </ul>
+  <% end %>
+  
   <div class="box">
     <p class="book-title">Title</p>
 	<%= f.text_field :title %>
