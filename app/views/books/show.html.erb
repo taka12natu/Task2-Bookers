@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Title:<%= @book.title %></h2>
+<p class="margin"><strong>Title:</strong><%= @book.title %></p>
 
-<h2>Body:<%= @book.body %></h2>
-<!-- 上にspan入れてタイトルとフォント変更 -->
+<p class="margin"><strong>Body:</strong><%= @book.body %></p>
 
 <span><%= link_to "Edit", edit_book_path(@book.id) %></span>
+<span id="border">|</span>
 <span><%= link_to "Back", "/books" %></span>

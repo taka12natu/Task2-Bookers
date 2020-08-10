@@ -13,6 +13,93 @@
  *= require_tree .
  *= require_self
  */
-span{
-	font-weight: bold;
+ *{
+ 	margin: 0;
+ 	content: "";
+ 	box-sizing: border-box;
+ 	font-family: verdana, arial, helvetica, sans-serif;
+ }
+h1{
+	font-size: 26px;
+	text-align: left;
+	padding-bottom: 10px;
+}
+a{
+	color: black;
+}
+body{
+	margin: 33px;
+}
+.margin{
+	margin: 33px;
+	font-size: 13px;
+}
+
+table{
+	border-spacing: 2px;
+}
+th{
+	text-align: center;
+}
+tr{
+	text-align: left;
+	font-size: 13px;
+}
+td{
+	padding: 0 5px 7px 5px;
+	color: black;
+}
+.newbook{
+	margin-top: 5px;
+	font-size: 19.5px;
+}
+.box{
+	padding-bottom: 10px;
+}
+.book-title{
+	text-align: left;
+	margin: 10px 0;
+}
+.create-book{
+	display: inline-block;
+	margin-top: 10px;
+}
+.bottom{
+	margin-top: 10px;
+}
+#border{
+	padding-left: 0 2px
+}
+
+/* flash message */
+#notice{
+	font-size: 13px;
+	color: #008000;
+	margin: 33px;
+}
+.error-title{
+	width: 450px;
+	font-size: 12px;
+	padding: 5px 5px 5px 15px;
+	color: white;
+	background-color: red;
+}
+.error-content{
+	width: 450px;
+	border: solid;
+	border-color: red;
+	background-color: #F0F0F0;
+}
+.error-message:first-child {
+	font-size: 12px;
+	margin: 33px 33px 5px 33px;
+}
+.error-message:last-child{
+	font-size: 12px;
+	margin: 0 33px 33px 33px;
+}
+.field_with_errors{
+	display: inline-block;
+	background-color: red;
+	padding: 2px;
 }
